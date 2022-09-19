@@ -4,20 +4,18 @@ import NavBar from "../components/navbar/navbar.component";
 import Banner from "../components/banner/banner.component";
 import SectionCards from "../components/section-cards/section-cards.component";
 
+import { getVideos } from "../lib/videos.lib";
+
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
-  const disneyVideos = [
-    {
-      imgUrl: "/static/clifford.webp",
-    },
-    {
-      imgUrl: "/static/clifford.webp",
-    },
-    {
-      imgUrl: "/static/clifford.webp",
-    },
-  ];
+export async function getServerSideProps() {
+  const disneyVideos = await getVideos();
+
+  return { props: { disneyVideos } };
+}
+
+export default function Home(props) {
+  const { disneyVideos } = props;
 
   return (
     <div className={styles.container}>
