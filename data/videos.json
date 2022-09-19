@@ -1,0 +1,862 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "BVjlbd4hr7QENCG17ys35LXfVOQ",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "ID",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 25
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "XEcX0z6gpuP1xyhTvFLmihVzwXw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "0-wPm99PF9U"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-09T23:42:33Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "The Little Mermaid - Official Teaser Trailer",
+        "description": "Out of the sea, wish I could be... part of that world. Disney's The Little Mermaid is coming to theaters May 26, 2023. “The Little ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0-wPm99PF9U/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0-wPm99PF9U/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0-wPm99PF9U/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-09T23:42:33Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "KmkTox_6zgjrXa--JSTsNr6hurA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "dRuwjZJ-DQw"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-09T23:03:41Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "Disenchanted | Official Trailer | Disney+",
+        "description": "The magical teaser trailer for the all-new live-action musical comedy “Disenchanted,” which premiered at the D23 Expo 2022 in ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dRuwjZJ-DQw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dRuwjZJ-DQw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dRuwjZJ-DQw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-09T23:03:41Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "DJjqY8F-I5hrjH4FxyqW5Nctz4k",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "qZVTkn2NjS0"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T18:55:51Z",
+        "channelId": "UCvC4D8onUfXzvjTOM-dBfEA",
+        "title": "Marvel Studios’ Secret Invasion | Official Trailer | Disney+",
+        "description": "\"I'm the last person standing between them and what they really want.\" Marvel Studios' Secret Invasion, an Original series, ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qZVTkn2NjS0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qZVTkn2NjS0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qZVTkn2NjS0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Marvel Entertainment",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T18:55:51Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "andusxdS1p80Ejx0fb3yxFdgg1c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "__si5sUp4Kc"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-05T13:00:32Z",
+        "channelId": "UCI_c_ZmYt6CtFJo4jOQVhiw",
+        "title": "Pinocchio | Official Trailer | Disney+ Hotstar Indonesia",
+        "description": "When you wish upon a star…⭐ Disney+ Hotstar adalah layanan streaming yang menayangkan film-film dari Disney, Marvel, ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/__si5sUp4Kc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/__si5sUp4Kc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/__si5sUp4Kc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "DisneyPlus Hotstar Indonesia",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-05T13:00:32Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "sqs8XoQv9fA4UZWWvf1s92O0ERU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "CaimKeDcudo"
+      },
+      "snippet": {
+        "publishedAt": "2021-09-29T13:00:05Z",
+        "channelId": "UC_976xMxPgzIa290Hqtk-9g",
+        "title": "Disney&#39;s Encanto | Official Trailer",
+        "description": "This November, find your magic. ✨   Watch the brand-new trailer for Disney's Encanto, coming to theaters this Thanksgiving.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/CaimKeDcudo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/CaimKeDcudo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/CaimKeDcudo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Animation Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-09-29T13:00:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "kNalMGwHYroSkMwygPSqcKkEolw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "o_i8zW1OsL8"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-09T23:13:03Z",
+        "channelId": "UCzauGwJ4mP1ZR7oZxBSa8eA",
+        "title": "Hocus Pocus 2 | Official Trailer | Disney+",
+        "description": "This Halloween season, the Sanderson Sisters fly again. #HocusPocus2, an Original movie event, is streaming September 30 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o_i8zW1OsL8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o_i8zW1OsL8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o_i8zW1OsL8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios Canada",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-09T23:13:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "1xYe8cKiKouVv2vT1o6ZTRrsKpk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "G-9FEj3fUWU"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T00:14:06Z",
+        "channelId": "UCdtXPiqI2cLorKaPrfpKc4g",
+        "title": "The Little Mermaid | Official Teaser Trailer",
+        "description": "The Little Mermaid | Official Teaser Trailer More from Entertainment Tonight: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/G-9FEj3fUWU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/G-9FEj3fUWU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/G-9FEj3fUWU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Entertainment Tonight",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T00:14:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-uZI0zHP7cf_1vP9xetLTzIqxW4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "aWVS9OZ3Q8o"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T00:09:17Z",
+        "channelId": "UCP6nJ-Elnfnpjv6HQRsv1Cw",
+        "title": "Desencantada | Trailer Oficial Dublado | Disney+",
+        "description": "Nada fica encantado para sempre. #Desencantada, um Filme Original. Em 24 de novembro no #DisneyPlus. #D23Expo.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/aWVS9OZ3Q8o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/aWVS9OZ3Q8o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/aWVS9OZ3Q8o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios BR",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T00:09:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "5cT1OLDR5iLAKeGgaRmGRhKoawE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sUgwJrirrdI"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-12T15:01:44Z",
+        "channelId": "UCItRs-h8YU1wRRfP637614w",
+        "title": "Invasão Secreta | Marvel Studios | Trailer Oficial Dublado | Disney+",
+        "description": "\"E eu sou a última pessoa que restou entre eles e o que eles querem.\" #InvasãoSecreta da Marvel Studios, uma Série Original, ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sUgwJrirrdI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sUgwJrirrdI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sUgwJrirrdI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Marvel Brasil",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-12T15:01:44Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "XLeNfp6QujTSmGWYIrGE50-WjU8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "2vNVGZGlUok"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-31T12:45:36Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "Pinocchio | Teaser Trailer | Disney+",
+        "description": "When you wish upon a star…⭐ Watch the trailer for the all-new live action #Pinocchio and stream the movie, a #DisneyPlusDay ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2vNVGZGlUok/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2vNVGZGlUok/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2vNVGZGlUok/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-31T12:45:36Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "VpuUb1SRG_I10NP-B9N4btiswqE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "E4dCY_DvT-4"
+      },
+      "snippet": {
+        "publishedAt": "2021-09-29T14:04:00Z",
+        "channelId": "UCq3zaHCaZtb3TtNwwz0PK2w",
+        "title": "Encanto | Tráiler Oficial | Disney @Disney Studios LA",
+        "description": "Este noviembre, encuentra tu magia. ✨   ¡Mira el nuevo tráiler de #DisneyEncanto! Estreno 25 de noviembre, solo en cines.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/E4dCY_DvT-4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/E4dCY_DvT-4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/E4dCY_DvT-4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney Latinoamérica",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-09-29T14:04:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BRP5cY6bGc6H3nIa8KKJ4T2SiB8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "KK8FHdFluOQ"
+      },
+      "snippet": {
+        "publishedAt": "2019-12-05T14:00:06Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "Disney&#39;s Mulan | Official Trailer",
+        "description": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Army to defend the country from ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KK8FHdFluOQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KK8FHdFluOQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KK8FHdFluOQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-12-05T14:00:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "jF0wpLtnlV2WZnqMz4lgh1zMvMU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "iEjJMpzzfMc"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T09:46:16Z",
+        "channelId": "UCMm8XFMnB2wODJqYt6d6OJQ",
+        "title": "La Sirenita | Teaser Tráiler Oficial subtitulado en español | HD",
+        "description": "El exterior… Quiero formar parte de él. #LaSirenita de Disney, próximamente solo en cines Síguenos en Facebook: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/iEjJMpzzfMc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/iEjJMpzzfMc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/iEjJMpzzfMc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney España",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T09:46:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ybne0VrFvNQmyGIgTkAwcyFrU7Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Srg6IG0KTUQ"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T00:00:40Z",
+        "channelId": "UC8huWhDjI8UJK4bqo8BJ9WQ",
+        "title": "Desencantada | Tráiler Oficial Subtitulado | Disney+",
+        "description": "Nada se mantiene encantado para siempre. #Desencantada, Película Original, estreno 24 de noviembre en #DisneyPlus.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Srg6IG0KTUQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Srg6IG0KTUQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Srg6IG0KTUQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney Studios LA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T00:00:40Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BREaEtTF6Bhr2YHR2-1TJELCyKw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "K9Cj4yAbsRE"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-09T23:28:55Z",
+        "channelId": "UC3uPK6zOTe0HOfcIkuzII0Q",
+        "title": "Abracadabra 2 | Tráiler Oficial | Doblado",
+        "description": "En esta temporada de Halloween, las hermanas Sanderson vuelven a volar #Abracadabra2, Película Original, estreno 30 de ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/K9Cj4yAbsRE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/K9Cj4yAbsRE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/K9Cj4yAbsRE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney+ Latinoamérica",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-09T23:28:55Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Vy1lZFvYZqAAcS8RQdoNQ4Yhy5E",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "OVI9FbMuHdA"
+      },
+      "snippet": {
+        "publishedAt": "2022-08-24T16:22:28Z",
+        "channelId": "UCHjX8DEVy6ECIRpdGYzHBSA",
+        "title": "Pinocchio | Officiële Trailer | Disney+",
+        "description": "De geliefde klassieker komt tot leven in de nieuwe live-action #Pinocchio! Bekijk de nieuwe trailer en stream de film, een ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/OVI9FbMuHdA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/OVI9FbMuHdA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/OVI9FbMuHdA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney NL",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-08-24T16:22:28Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3TMD6MLmRCc2YnahwOK6IDnMIi8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "aUts14xyjHg"
+      },
+      "snippet": {
+        "publishedAt": "2021-09-29T13:22:36Z",
+        "channelId": "UCCPJwUM4ZwSwba5o5m6B0Ug",
+        "title": "Disney&#39;s Encanto | Official Trailer",
+        "description": "Uncover the mystery, find your magic ✨ Be swept away in the all-new trailer for Disney's Encanto: A Magical World! #EncantoPH ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/aUts14xyjHg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/aUts14xyjHg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/aUts14xyjHg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios Philippines",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-09-29T13:22:36Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "nXDM6VHtnBQXATc-cXAcvBnc5s8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "-uRRKqQbmw4"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T17:38:52Z",
+        "channelId": "UCZGYJFUizSax-yElQaFDp5Q",
+        "title": "Tales Of The Jedi | Official Trailer | Disney Plus",
+        "description": "Two Stories of Fate. One Destiny. #TalesOfTheJedi is coming to #DisneyPlus. All six Original shorts are streaming on October 26.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-uRRKqQbmw4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-uRRKqQbmw4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-uRRKqQbmw4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Star Wars",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T17:38:52Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Q6rA74hKX8zp-RJOOTbZWi8hM2M",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kLt-OSmLm5E"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T07:41:59Z",
+        "channelId": "UCBH4HCPqGYZ0Yr6peYP0yag",
+        "title": "La Sirenetta | Teaser Trailer",
+        "description": "Fuori dal mar come vorrei vivere là... #LaSirenetta prossimamente al cinema. Seguici anche su Facebook: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kLt-OSmLm5E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kLt-OSmLm5E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kLt-OSmLm5E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney IT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T07:41:59Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "VGytDK6vIUCYfTONJatIbg6Qjrg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "xT_PvkSvmz0"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T03:09:10Z",
+        "channelId": "UCI_c_ZmYt6CtFJo4jOQVhiw",
+        "title": "Disenchanted | Official Trailer | Disney+ Hotstar Indonesia",
+        "description": "Tidak selamanya semua hal mempesona. Eksklusif di #DisneyPlusHotstarID, streaming film original #Disenchanted 24 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xT_PvkSvmz0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xT_PvkSvmz0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xT_PvkSvmz0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "DisneyPlus Hotstar Indonesia",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T03:09:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "G6qOQHGeYr1QW0RsZaY8F33pNBw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "idc0EOmKr30"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-09T22:52:23Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "Hocus Pocus 2 | Official Trailer | Disney+",
+        "description": "This Halloween Season, some legends never die. Hocus Pocus 2, an Original movie event, streaming September 30 on Disney ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/idc0EOmKr30/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/idc0EOmKr30/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/idc0EOmKr30/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-09T22:52:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "DnGW6T-CuBC3YlqqrC2MWOQp8SE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "1yYwgWbAmwI"
+      },
+      "snippet": {
+        "publishedAt": "2022-08-24T18:08:17Z",
+        "channelId": "UCunkR_ekffRWZppVa1E6tIA",
+        "title": "Pinóquio | Trailer Oficial Dublado | Disney",
+        "description": "Um clássico muito amado volta em um live-action imperdível: #Pinóquio. ⏰      \u200d♂️⭐   Veja o novo trailer e assista ao Filme ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1yYwgWbAmwI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1yYwgWbAmwI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1yYwgWbAmwI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney Brasil",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-08-24T18:08:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Ig8CiVWo_eEwLjwnCtsRhXR4GlM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sQcdkDYlyHE"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-21T09:00:51Z",
+        "channelId": "UCvv3SF2SzAAOAkvs_r7vEvA",
+        "title": "ENCANTO – Offizieller Trailer (deutsch/german) | Disney HD",
+        "description": "Finde diesen November deine Magie. ✨   Schau dir hier den ersten Trailer zu ENCANTO an, jetzt nur im Kino! Abonniert ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sQcdkDYlyHE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sQcdkDYlyHE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sQcdkDYlyHE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Disney Deutschland",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-21T09:00:51Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "R5-yM85N2FlDIZd3UaaAvAAGvBQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "da7BYWyvwO8"
+      },
+      "snippet": {
+        "publishedAt": "2022-09-10T17:34:30Z",
+        "channelId": "UCnwY6fAhE3ePu0F2nMP-DLg",
+        "title": "Willow | Official Trailer | Disney+",
+        "description": "This November, the magic returns✨ Watch the new trailer for #Willow, an epic new Original series streaming only on ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/da7BYWyvwO8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/da7BYWyvwO8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/da7BYWyvwO8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Lucasfilm",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-09-10T17:34:30Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ncFp-QjkKPvKq4PVh0mkewo27sQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "BXfxLIuNJvw"
+      },
+      "snippet": {
+        "publishedAt": "2018-09-04T16:02:37Z",
+        "channelId": "UCuaFvcY4MhZY3U43mMt1dYQ",
+        "title": "Disney&#39;s The Nutcracker and the Four Realms - Final Trailer",
+        "description": "In theaters November 2nd. All Clara (Mackenzie Foy) wants is a key – a one-of-a-kind key that will unlock a box that holds a ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BXfxLIuNJvw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BXfxLIuNJvw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BXfxLIuNJvw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Walt Disney Studios",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-09-04T16:02:37Z"
+      }
+    }
+  ]
+}
