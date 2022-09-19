@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import NavBar from "../components/navbar/navbar.component";
 import Banner from "../components/banner/banner.component";
+import Card from "../components/card/card.component";
 
 import styles from "../styles/Home.module.css";
 
@@ -21,9 +22,9 @@ export default function Home() {
         imgUrl="/static/clifford.webp"
       />
 
-      {/*
-      <Card />
-    */}
+      <Card imgUrl="/static/clifford.webp" size="large" />
+      <Card imgUrl="/static/clifford.webp" size="medium" />
+      <Card imgUrl="/static/clifford.webp" size="small" />
     </div>
   );
 }
