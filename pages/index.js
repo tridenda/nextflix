@@ -5,6 +5,7 @@ import Banner from "../components/banner/banner.component";
 import SectionCards from "../components/section-cards/section-cards.component";
 
 import { getVideos, getPopularVideos } from "../lib/videos.lib";
+import { magic } from "../lib/magic-client";
 
 import styles from "../styles/Home.module.css";
 
@@ -12,6 +13,7 @@ export async function getServerSideProps() {
   const disneyVideos = await getVideos("Disney trailer");
   const productivityVideos = await getVideos("Productivity");
   const travelVideos = await getVideos("Travel");
+
   const popularVideos = await getPopularVideos();
 
   return {
