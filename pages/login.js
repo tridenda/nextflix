@@ -39,22 +39,17 @@ const Login = () => {
     e.preventDefault();
 
     if (email) {
-      setIsLoading(true);
-      if (email === "tridenda.nk@gmail.com") {
-        try {
-          const didToken = await magic.auth.loginWithMagicLink({
-            email,
-          });
+      try {
+        setIsLoading(true);
+        const didToken = await magic.auth.loginWithMagicLink({
+          email,
+        });
 
-          if (didToken) {
-            router.push("/");
-          }
-        } catch {
-          // Handle errors if required!
-          setIsLoading(false);
+        if (didToken) {
+          router.push("/");
         }
-      } else {
-        setUserMsg("Please enter the correct email");
+      } catch (error) {
+        console.error("Something went wrong loggin in", error);
         setIsLoading(false);
       }
     } else {
