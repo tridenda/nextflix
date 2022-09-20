@@ -34,7 +34,7 @@ export default function Home(props) {
       </Head>
 
       <div className={styles.main}>
-        <NavBar username="tridenda.nk@gmail.com" />
+        <NavBar />
         <Banner
           title="Clifford the red dog"
           subTitle="a very cute dog"
