@@ -36,7 +36,7 @@
 .series {
   font-size: 0.875rem /* 14px */;
   line-height: 1.25rem /* 20px */;
-  color: var(--gray20);
+  color: var(--gray30);
   align-self: center;
 }
 
