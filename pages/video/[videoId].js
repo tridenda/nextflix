@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 
+import cls from "classnames";
 import Modal from "react-modal";
 
 import styles from "../../styles/Video.module.css";
@@ -8,6 +9,17 @@ Modal.setAppElement("#__next");
 
 const Video = () => {
   const router = useRouter();
+  const { videoId } = router.query;
+
+  const video = {
+    title: "Hi cute dong",
+    publishTime: "1990-01-01",
+    description:
+      "The change went into effect in September 2018. Since then, setting the parameter to “0” no longer disabled the related videos, which effectively reduces your control over the content people see on your website. However, there’s a silver lining: setting “rel” to “0” now displays related videos from the same channel that posted the original video. This means that if you post a video from your own channel, at least all the related videos will be yours, too, and you won’t run the risk of promoting the competition.",
+    channelTitle: "Paramount Pictures",
+    viewCount: 10000,
+  };
+  const { title, publishTime, description, channelTitle, viewCount } = video;
 
   return (
     <div className={styles.container}>
@@ -18,7 +30,38 @@ const Video = () => {
         onRequestClose={() => router.back()}
         overlayClassName={styles.overlay}
       >
-        <h1>This is a modal</h1>
+        <div className={styles.videoWrapper}>
+          <iframe
+            className={styles.videoPlayer}
+            id="player"
+            type="text/html"
+            width="640"
+            height="390"
+            src={`http://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=http://example.com&control=0&rel=0`}
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div className={styles.modalBody}>
+          <div className={styles.modalBodyContent}>
+            <div className={styles.col1}>
+              <p className={styles.publishTime}>{publishTime}</p>
+              <p className={styles.title}>{title}</p>
+              <p className={styles.description}>{description}</p>
+            </div>
+
+            <div className={styles.col2}>
+              <p className={cls(styles.subTextWrapper, styles.subText)}>
+                <span className={styles.infoTextKey}>Cast: </span>
+                <span className={styles.infoTextValue}>{channelTitle}</span>
+              </p>
+              <p className={cls(styles.subTextWrapper, styles.subText)}>
+                <span className={styles.infoTextKey}>View Count: </span>
+                <span className={styles.infoTextValue}>{viewCount}</span>
+              </p>
+            </div>
+          </div>
+        </div>
       </Modal>
     </div>
   );

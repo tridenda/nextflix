@@ -34,8 +34,6 @@ function MyApp({ Component, pageProps }) {
     // I have no idea why this code works
     // I need to exam this more
     // start
-    console.log("asPath: ", asPath);
-    console.log("query: ", query);
     if (
       !asPath.includes("?") ||
       (asPath.includes("?") && Object.keys(query).length === 0)
