@@ -3,29 +3,22 @@ import { useRouter } from "next/router";
 import cls from "classnames";
 import Modal from "react-modal";
 
+import Navbar from "../../components/navbar/navbar.component";
+
 import { getYoutubeVideoById } from "../../lib/videos.lib";
 
 import styles from "../../styles/Video.module.css";
+import NavBar from "../../components/navbar/navbar.component";
 
 Modal.setAppElement("#__next");
 
 export async function getStaticProps(context) {
-  const video = {
-    title: "Hi cute dong",
-    publishTime: "1990-01-01",
-    description:
-      "The change went into effect in September 2018. Since then, setting the parameter to “0” no longer disabled the related videos, which effectively reduces your control over the content people see on your website. However, there’s a silver lining: setting “rel” to “0” now displays related videos from the same channel that posted the original video. This means that if you post a video from your own channel, at least all the related videos will be yours, too, and you won’t run the risk of promoting the competition.",
-    channelTitle: "Paramount Pictures",
-    viewCount: 10000,
-    statistics: { viewCount: 0 },
-  };
-
   const videoId = context.params.videoId;
   const videoArray = await getYoutubeVideoById(videoId);
 
   return {
     props: {
-      video: videoArray.length > 0 ? videoArray[0] : video,
+      video: videoArray.length > 0 ? videoArray[0] : {},
     },
     revalidate: 10, // In seconds
   };
@@ -52,10 +45,9 @@ const Video = (props) => {
     statistics: { viewCount } = { viewCount: 0 },
   } = props.video;
 
-  console.log("props.video:", props.video);
-
   return (
     <div className={styles.container}>
+      <NavBar />
       <Modal
         className={styles.modal}
         isOpen={true}
