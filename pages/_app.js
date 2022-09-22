@@ -9,6 +9,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const { asPath, query } = router;
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -29,8 +30,19 @@ function MyApp({ Component, pageProps }) {
     const handleComplete = () => {
       setIsLoading(false);
     };
-    router.events.on("routeChangeComplete", handleComplete);
-    router.events.on("routeChangeError", handleComplete);
+
+    // I have no idea why this code works
+    // I need to exam this more
+    // start
+    console.log("asPath: ", asPath);
+    console.log("query: ", query);
+    if (
+      !asPath.includes("?") ||
+      (asPath.includes("?") && Object.keys(query).length === 0)
+    ) {
+      setIsLoading(false);
+    }
+    // end
 
     return () => {
       router.events.off("routeChangeComplete", handleComplete);

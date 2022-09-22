@@ -5,7 +5,6 @@ import Banner from "../components/banner/banner.component";
 import SectionCards from "../components/section-cards/section-cards.component";
 
 import { getVideos, getPopularVideos } from "../lib/videos.lib";
-import { magic } from "../lib/magic-client";
 
 import styles from "../styles/Home.module.css";
 
@@ -17,12 +16,12 @@ export async function getServerSideProps() {
   const popularVideos = await getPopularVideos();
 
   return {
-    props: { disneyVideos, productivityVideos, travelVideos, popularVideos },
+    props: { disneyVideos, popularVideos, productivityVideos, travelVideos },
   };
 }
 
 export default function Home(props) {
-  const { disneyVideos, productivityVideos, travelVideos, popularVideos } =
+  const { disneyVideos, popularVideos, productivityVideos, travelVideos } =
     props;
 
   return (
