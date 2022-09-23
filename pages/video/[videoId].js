@@ -62,6 +62,7 @@ const Video = (props) => {
             type="text/html"
             width="640"
             height="390"
+            allowFullScreen="allowfullscreen"
             src={`http://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=http://example.com&control=0&rel=0`}
             frameborder="0"
           ></iframe>
