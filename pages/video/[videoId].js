@@ -1,14 +1,15 @@
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 import cls from "classnames";
 import Modal from "react-modal";
-
-import Navbar from "../../components/navbar/navbar.component";
 
 import { getYoutubeVideoById } from "../../lib/videos.lib";
 
 import styles from "../../styles/Video.module.css";
 import NavBar from "../../components/navbar/navbar.component";
+import Like from "../../components/icons/like/like.component";
+import DisLike from "../../components/icons/dislike/dislike.component";
 
 Modal.setAppElement("#__next");
 
@@ -35,8 +36,9 @@ export async function getStaticPaths() {
 
 const Video = (props) => {
   const router = useRouter();
+  const [toggleLike, setToggleLike] = useState(false);
+  const [toggleDislike, setToggleDislike] = useState(false);
   const { videoId } = router.query;
-
   const {
     title,
     publishTime,
@@ -44,6 +46,16 @@ const Video = (props) => {
     channelTitle,
     statistics: { viewCount } = { viewCount: 0 },
   } = props.video;
+
+  const handleToggleLike = () => {
+    setToggleLike(!toggleLike);
+    setToggleDislike(toggleLike);
+  };
+
+  const handleToggleDislike = () => {
+    setToggleDislike(!toggleDislike);
+    setToggleLike(toggleDislike);
+  };
 
   return (
     <div className={styles.container}>
@@ -60,12 +72,27 @@ const Video = (props) => {
             className={styles.videoPlayer}
             id="player"
             type="text/html"
-            width="640"
-            height="390"
+            width="100%"
+            height="500"
             allowFullScreen="allowfullscreen"
             src={`http://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=http://example.com&control=0&rel=0`}
             frameborder="0"
           ></iframe>
+          <div className={styles.likeDislikeBtnWrapper}>
+            <div className={styles.likeBtnWrapper}>
+              <button onClick={handleToggleLike}>
+                <div className={styles.btnWrapper}>
+                  <Like selected={toggleLike} />
+                </div>
+              </button>
+            </div>
+
+            <button onClick={handleToggleDislike}>
+              <div className={styles.btnWrapper}>
+                <DisLike selected={toggleDislike} />
+              </div>
+            </button>
+          </div>
         </div>
 
         <div className={styles.modalBody}>
