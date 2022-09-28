@@ -48,13 +48,13 @@ const Video = (props) => {
   } = props.video;
 
   const handleToggleLike = () => {
-    setToggleDislike(!toggleDislike);
-    setToggleLike(toggleDislike);
+    setToggleLike(!toggleLike);
+    setToggleDislike(toggleLike);
   };
 
   const handleToggleDislike = () => {
-    setToggleLike(!toggleLike);
-    setToggleDislike(toggleLike);
+    setToggleDislike(!toggleDislike);
+    setToggleLike(toggleDislike);
   };
 
   return (
