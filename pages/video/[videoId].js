@@ -47,9 +47,20 @@ const Video = (props) => {
     statistics: { viewCount } = { viewCount: 0 },
   } = props.video;
 
-  const handleToggleLike = () => {
+  const handleToggleLike = async () => {
     setToggleLike(!toggleLike);
     setToggleDislike(toggleLike);
+
+    const response = await fetch("/api/stats", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        videoId,
+        favourited: toggleLike ? 1 : 0,
+      }),
+    });
   };
 
   const handleToggleDislike = () => {
