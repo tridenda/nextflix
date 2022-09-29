@@ -10,22 +10,20 @@ import {
   getWatchItAgainVideos,
 } from "../lib/videos.lib";
 
+import useRedirectuser from "../utils/redirectUser.util";
+
 import styles from "../styles/Home.module.css";
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+  const { userId, token } = await useRedirectuser(context);
+
   const disneyVideos = await getVideos("Disney trailer");
   const productivityVideos = await getVideos("Productivity");
   const travelVideos = await getVideos("Travel");
 
-  const userId = "did:ethr:0xBB3208999971441d6B05d6f4d8bCE66F5E7eC759";
-  const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3N1ZXIiOiJkaWQ6ZXRocjoweEJCMzIwODk5OTk3MTQ0MWQ2QjA1ZDZmNGQ4YkNFNjZGNUU3ZUM3NTkiLCJwdWJsaWNBZGRyZXNzIjoiMHhCQjMyMDg5OTk5NzE0NDFkNkIwNWQ2ZjRkOGJDRTY2RjVFN2VDNzU5IiwiZW1haWwiOiJ0cmlkZW5kYS5ua0BnbWFpbC5jb20iLCJvYXV0aFByb3ZpZGVyIjpudWxsLCJwaG9uZU51bWJlciI6bnVsbCwiaWF0IjoxNjY0NDczOTM3LCJleHAiOjE2NjUwNzg3MzcsImh0dHBzOi8vaGFzdXJhLmlvL2p3dC9jbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJ1c2VyIiwiYWRtaW4iXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoidXNlciIsIngtaGFzdXJhLXVzZXItaWQiOiJkaWQ6ZXRocjoweEJCMzIwODk5OTk3MTQ0MWQ2QjA1ZDZmNGQ4YkNFNjZGNUU3ZUM3NTkifX0.7kXRWhPM0Kt1IyREuVSyPQrjCaNF1L6Lw6D09AT17Do";
-  const watchedItAgainVideos = await getWatchItAgainVideos(token, {
+  const watchItAgainVideos = await getWatchItAgainVideos(token, {
     userId,
   });
-
-  console.log(travelVideos);
-  console.log(watchedItAgainVideos);
 
   const popularVideos = await getPopularVideos();
 
@@ -35,7 +33,7 @@ export async function getServerSideProps() {
       popularVideos,
       productivityVideos,
       travelVideos,
-      watchedItAgainVideos,
+      watchItAgainVideos,
     },
   };
 }
@@ -46,7 +44,7 @@ export default function Home(props) {
     popularVideos,
     productivityVideos,
     travelVideos,
-    watchedItAgainVideos,
+    watchItAgainVideos = [],
   } = props;
 
   return (
@@ -68,11 +66,15 @@ export default function Home(props) {
 
         <div className={styles.sectionWrapper}>
           <SectionCards title="Disney" videos={disneyVideos} size="large" />
-          <SectionCards
-            title="Watch it again"
-            videos={watchedItAgainVideos}
-            size="small"
-          />
+
+          {watchItAgainVideos.length > 0 && (
+            <SectionCards
+              title="Watch it again"
+              videos={watchItAgainVideos}
+              size="small"
+            />
+          )}
+
           <SectionCards
             title="Productivity"
             videos={productivityVideos}
