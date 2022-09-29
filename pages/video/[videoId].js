@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import cls from "classnames";
 import Modal from "react-modal";
@@ -46,6 +46,22 @@ const Video = (props) => {
     channelTitle,
     statistics: { viewCount } = { viewCount: 0 },
   } = props.video;
+
+  useEffect(() => {
+    const getStats = async () => {
+      const response = await fetch(`/api/stats?videoId=${videoId}`);
+      const stats = await response.json();
+
+      if (stats.length > 0) {
+        const favourited = stats[0].favourited;
+        console.log(favourited);
+
+        favourited === 1 ? setToggleLike(true) : setToggleDislike(true);
+      }
+    };
+
+    getStats();
+  }, []);
 
   const handleToggleLike = async () => {
     setToggleLike(!toggleLike);
