@@ -51,21 +51,29 @@ const Video = (props) => {
     setToggleLike(!toggleLike);
     setToggleDislike(toggleLike);
 
-    const response = await fetch("/api/stats", {
+    const favourited = toggleLike ? 0 : 1;
+    const response = await runRatingService(favourited);
+  };
+
+  const handleToggleDislike = async () => {
+    setToggleDislike(!toggleDislike);
+    setToggleLike(toggleDislike);
+
+    const favourited = toggleDislike ? 1 : 0;
+    const response = await runRatingService(favourited);
+  };
+
+  const runRatingService = async (favourited) => {
+    return await fetch("/api/stats", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         videoId,
-        favourited: toggleLike ? 1 : 0,
+        favourited,
       }),
     });
-  };
-
-  const handleToggleDislike = () => {
-    setToggleDislike(!toggleDislike);
-    setToggleLike(toggleDislike);
   };
 
   return (
@@ -87,7 +95,7 @@ const Video = (props) => {
             height="500"
             allowFullScreen="allowfullscreen"
             src={`http://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=http://example.com&control=0&rel=0`}
-            frameborder="0"
+            frameBorder="0"
           ></iframe>
           <div className={styles.likeDislikeBtnWrapper}>
             <div className={styles.likeBtnWrapper}>
