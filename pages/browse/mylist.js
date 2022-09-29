@@ -45,7 +45,7 @@ const MyList = ({ myListVideos }) => {
             title="My List"
             videos={myListVideos}
             size="small"
-            shouldWrap
+            shouldWrap={true}
             shouldScale={false}
           />
         </div>
