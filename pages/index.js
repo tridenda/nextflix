@@ -10,12 +10,12 @@ import {
   getWatchItAgainVideos,
 } from "../lib/videos.lib";
 
-import useRedirectUser from "../utils/redirectUser.util";
+import redirectUser from "../utils/redirectUser.util";
 
 import styles from "../styles/Home.module.css";
 
 export async function getServerSideProps(context) {
-  const { userId, token } = await useRedirectUser(context);
+  const { userId, token } = await redirectUser(context);
 
   if (!userId) {
     return {
