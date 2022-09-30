@@ -1,9 +1,9 @@
-import jwt from "jsonwebtoken";
 import {
   findVideoIdByUser,
   updateStats,
   insertStats,
 } from "../../lib/db/hasura";
+import { verifyToken } from "../../lib/utils";
 
 export default async function stats(req, res) {
   try {
@@ -17,8 +17,7 @@ export default async function stats(req, res) {
 
     if (!videoId) res.send({ msg: "videoId doesn't exist" });
 
-    const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
-    const userId = decodedToken.issuer;
+    const userId = verifyToken(token);
     const findVideo = await findVideoIdByUser(token, userId, videoId);
     const doesStatsExist = findVideo?.length > 0;
 
