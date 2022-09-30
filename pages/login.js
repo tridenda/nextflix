@@ -16,6 +16,19 @@ const Login = () => {
   const router = useRouter();
 
   useEffect(() => {
+    const routeIfLoggedIn = async () => {
+      const isLoggedIn = await magic.user.isLoggedIn();
+
+      if (isLoggedIn) {
+        // route to
+        router.push("/");
+      }
+    };
+
+    routeIfLoggedIn();
+  }, []);
+
+  useEffect(() => {
     const handleComplete = () => {
       setIsLoading(false);
     };

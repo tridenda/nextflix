@@ -37,7 +37,7 @@ const NavBar = () => {
 
   const handleOnClickMyList = (e) => {
     e.preventDefault();
-    router.push("/browse/my-list");
+    router.push("/browse/mylist");
   };
 
   const handleShowDropdown = (e) => {
@@ -50,10 +50,13 @@ const NavBar = () => {
 
     try {
       await magic.user.logout();
+      await fetch("/api/logout");
       console.log(await magic.user.isLoggedIn());
+
       router.push("/login");
     } catch (error) {
       console.error("Error logging out", error);
+
       router.push("/login");
     }
   };

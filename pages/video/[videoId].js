@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import cls from "classnames";
 import Modal from "react-modal";
@@ -47,14 +47,49 @@ const Video = (props) => {
     statistics: { viewCount } = { viewCount: 0 },
   } = props.video;
 
-  const handleToggleLike = () => {
+  useEffect(() => {
+    const getStats = async () => {
+      const response = await fetch(`/api/stats?videoId=${videoId}`);
+      const stats = await response.json();
+
+      if (stats.length > 0) {
+        const favourited = stats[0].favourited;
+        console.log(favourited);
+
+        favourited === 1 ? setToggleLike(true) : setToggleDislike(true);
+      }
+    };
+
+    getStats();
+  }, []);
+
+  const handleToggleLike = async () => {
     setToggleLike(!toggleLike);
     setToggleDislike(toggleLike);
+
+    const favourited = toggleLike ? 0 : 1;
+    const response = await runRatingService(favourited);
   };
 
-  const handleToggleDislike = () => {
+  const handleToggleDislike = async () => {
     setToggleDislike(!toggleDislike);
     setToggleLike(toggleDislike);
+
+    const favourited = toggleDislike ? 1 : 0;
+    const response = await runRatingService(favourited);
+  };
+
+  const runRatingService = async (favourited) => {
+    return await fetch("/api/stats", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        videoId,
+        favourited,
+      }),
+    });
   };
 
   return (
@@ -76,7 +111,7 @@ const Video = (props) => {
             height="500"
             allowFullScreen="allowfullscreen"
             src={`http://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=http://example.com&control=0&rel=0`}
-            frameborder="0"
+            frameBorder="0"
           ></iframe>
           <div className={styles.likeDislikeBtnWrapper}>
             <div className={styles.likeBtnWrapper}>

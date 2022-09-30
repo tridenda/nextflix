@@ -4,25 +4,58 @@ import NavBar from "../components/navbar/navbar.component";
 import Banner from "../components/banner/banner.component";
 import SectionCards from "../components/section-cards/section-cards.component";
 
-import { getVideos, getPopularVideos } from "../lib/videos.lib";
+import {
+  getVideos,
+  getPopularVideos,
+  getWatchItAgainVideos,
+} from "../lib/videos.lib";
+
+import useRedirectUser from "../utils/redirectUser.util";
 
 import styles from "../styles/Home.module.css";
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+  const { userId, token } = await useRedirectUser(context);
+
+  if (!userId) {
+    return {
+      props: {},
+      redirect: {
+        destination: "/login",
+        permanent: false,
+      },
+    };
+  }
+
   const disneyVideos = await getVideos("Disney trailer");
   const productivityVideos = await getVideos("Productivity");
   const travelVideos = await getVideos("Travel");
 
+  const watchItAgainVideos = await getWatchItAgainVideos(token, {
+    userId,
+  });
+
   const popularVideos = await getPopularVideos();
 
   return {
-    props: { disneyVideos, popularVideos, productivityVideos, travelVideos },
+    props: {
+      disneyVideos,
+      popularVideos,
+      productivityVideos,
+      travelVideos,
+      watchItAgainVideos,
+    },
   };
 }
 
 export default function Home(props) {
-  const { disneyVideos, popularVideos, productivityVideos, travelVideos } =
-    props;
+  const {
+    disneyVideos,
+    popularVideos,
+    productivityVideos,
+    travelVideos,
+    watchItAgainVideos = [],
+  } = props;
 
   return (
     <div className={styles.container}>
@@ -43,6 +76,15 @@ export default function Home(props) {
 
         <div className={styles.sectionWrapper}>
           <SectionCards title="Disney" videos={disneyVideos} size="large" />
+
+          {watchItAgainVideos.length > 0 && (
+            <SectionCards
+              title="Watch it again"
+              videos={watchItAgainVideos}
+              size="small"
+            />
+          )}
+
           <SectionCards
             title="Productivity"
             videos={productivityVideos}

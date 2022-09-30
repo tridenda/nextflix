@@ -1,26 +1,28 @@
-import jwt from "jsonwebtoken";
 import {
   findVideoIdByUser,
   updateStats,
   insertStats,
 } from "../../lib/db/hasura";
+import { verifyToken } from "../../lib/utils";
 
 export default async function stats(req, res) {
-  if (req.method === "POST") {
-    try {
-      const token = req.cookies.token;
+  try {
+    const token = req.cookies.token;
+    const inputParams = req.method === "POST" ? req.body : req.query;
+    const { videoId } = inputParams;
 
-      if (!req.cookies.token) {
-        res.status(403).send({});
-      }
+    if (!token) {
+      res.status(403).send({});
+    }
 
-      const { videoId, favourited, watched = true } = req.body;
+    if (!videoId) res.send({ msg: "videoId doesn't exist" });
 
-      if (!videoId) res.send({ msg: "videoId doesn't exist" });
+    const userId = verifyToken(token);
+    const findVideo = await findVideoIdByUser(token, userId, videoId);
+    const doesStatsExist = findVideo?.length > 0;
 
-      const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
-      const userId = decodedToken.issuer;
-      const doesStatsExist = await findVideoIdByUser(token, userId, videoId);
+    if (req.method === "POST") {
+      const { favourited, watched = true } = req.body;
 
       if (doesStatsExist) {
         // update it
@@ -43,9 +45,16 @@ export default async function stats(req, res) {
 
         res.send({ stats: response });
       }
-    } catch (error) {
-      console.error("Error occured /stats", error);
-      res.status(500).send({ done: false, error: error?.message });
+    } else {
+      if (doesStatsExist) {
+        res.send(findVideo);
+      } else {
+        res.status(404);
+        res.send({ user: null, msg: "Video not found" });
+      }
     }
+  } catch (error) {
+    console.error("Error occured /stats", error);
+    res.status(500).send({ done: false, error: error?.message });
   }
 }
