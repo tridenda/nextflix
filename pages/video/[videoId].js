@@ -54,7 +54,6 @@ const Video = (props) => {
 
       if (stats.length > 0) {
         const favourited = stats[0].favourited;
-        console.log(favourited);
 
         favourited === 1 ? setToggleLike(true) : setToggleDislike(true);
       }
